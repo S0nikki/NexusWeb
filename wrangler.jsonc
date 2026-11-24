@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "nexus-orm-website",
+  "main": "./worker/index.js",
+  "compatibility_date": "2026-11-23",
+  "routes": [
+    {
+      "pattern": "nexus.sonikki.gg",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  }
+}
